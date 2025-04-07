@@ -1,0 +1,33 @@
+﻿<Window x:Class="WordleProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordleProject"
+        mc:Ignorable="d"
+        Title="Wordle" Height="750" Width="400"
+        Background="#121213"
+        WindowStartupLocation="CenterScreen"
+        Focusable="True">
+
+    <Grid Margin="10">
+        <!-- Game Grid -->
+        <UniformGrid x:Name="TileGrid" Rows="6" Columns="5" 
+                     HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <!-- Top Button -->
+        <Button Content="Wordle" HorizontalAlignment="Center" 
+                Height="60" VerticalAlignment="Top" Width="170" 
+                Background="Transparent" BorderThickness="0"
+                Foreground="Green" FontSize="35" FontWeight="Black" 
+                FocusVisualStyle="{x:Null}" Margin="0,10,0,0"/>
+
+        <Grid x:Name="ButtonGrid" 
+             HorizontalAlignment="Center" VerticalAlignment="Bottom"
+             Margin="0,0,0,10"/>
+
+        <Grid x:Name="ButtonGrid1" 
+             HorizontalAlignment="Center" VerticalAlignment="Bottom"
+             Margin="0,0,0,60"/>
+
+    </Grid>
+</Window>
